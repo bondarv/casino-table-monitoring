@@ -1,0 +1,59 @@
+tr {
+    display: block;
+}
+
+td {
+    padding: 5px;
+    display: inline-block;
+    width: 20px;
+}
+
+td:nth-child(3) {
+    width: 60px;
+}
+
+#poker {
+    width: 15px;
+    height: 15px;
+    background: url(../images/poker.png) no-repeat center;
+}
+
+#black-jack {
+    width: 15px;
+    height: 15px;
+    background: url(../images/jack.png) no-repeat center;
+}
+
+#roulette {
+    width: 15px;
+    height: 15px;
+    background: url(../images/roulette.jpg) no-repeat center;
+}
+
+@-webkit-keyframes blinking
+{
+    from { box-shadow: 0px 2px 18px 0px red;}
+    to { box-shadow : none;}
+}
+
+@-moz-keyframes blinking
+{
+    from { box-shadow: 0px 2px 18px 0px red;}
+    to { box-shadow : none;}
+}
+@keyframes blinking
+{
+    from { box-shadow: 0px 2px 18px 0px red;}
+    to { box-shadow : none;}
+}
+
+#blinking-shadow {
+    box-shadow: 0px 2px 18px 0px red;
+    -webkit-animation: blinking 1s 98765432;
+    -moz-animation: blinking 1s 98765432;
+    animation: blinking 1s 98765432;
+}
+
+button {
+    margin-bottom: 15px;
+}
